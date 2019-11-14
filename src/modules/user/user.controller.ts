@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { Controller, Get } from '@nestjs/common';
 import { UserService } from './user.service';
 import { LoggerService } from '../common/logger/logger.service';
@@ -14,3 +15,9 @@ export class UserController {
     return this.userService.getUser();
   }
 }
+=======
+import { Controller } from '@nestjs/common';
+
+@Controller('user')
+export class UserController {}
+>>>>>>> graphpl_server
