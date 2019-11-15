@@ -11,6 +11,9 @@ import { MockModule } from './modules/mock/mock.module';
   imports: [
     GraphQLModule.forRoot({
       autoSchemaFile: 'schema.gql',
+      context: ({ req }) => {
+        console.log(req.body.operationName);
+      },
     }),
     UserModule,
     PostModule,

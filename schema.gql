@@ -18,6 +18,7 @@ type Query {
   user(id: String!): User!
 }
 
+"""User object."""
 type User {
   id: ID!
   name: String!
